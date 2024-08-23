@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_app"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="16dp"
+    tools:context=".ActivityLearntFruits">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        app:cardBackgroundColor="@color/todo_background_card"
+        app:cardCornerRadius="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Frutas"
+                android:textAllCaps="true"
+                android:textColor="@color/title_text"
+                android:textSize="50sp"
+                android:textStyle="normal"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fruits"
+                android:textAllCaps="true"
+                android:textColor="@color/title_text"
+                android:textSize="50sp"
+                android:textStyle="normal"
+                android:gravity="center"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewAppleLearnt"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/todo_background_card"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/viewBananaLearnt"
+        app:layout_constraintTop_toBottomOf="@id/viewText2"
+        app:layout_constraintBottom_toTopOf="@id/viewOrangeLearnt"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/apple"/>
+
+            <TextView
+                android:id="@+id/txtApple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Apple"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewBananaLearnt"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/todo_background_card"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toEndOf="@id/viewAppleLearnt"
+        app:layout_constraintTop_toBottomOf="@id/viewText2"
+        app:layout_constraintBottom_toTopOf="@id/viewLemonLearnt"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/bananas"/>
+
+            <TextView
+                android:id="@+id/txtBanana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Banana"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewOrangeLearnt"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/todo_background_card"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewAppleLearnt"
+        app:layout_constraintEnd_toStartOf="@id/viewLemonLearnt"
+        app:layout_constraintBottom_toTopOf="@id/viewPineappleLearnt"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/orange"/>
+
+            <TextView
+                android:id="@+id/txtOrange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Orange"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewLemonLearnt"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/todo_background_card"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toEndOf="@id/viewOrangeLearnt"
+        app:layout_constraintTop_toBottomOf="@id/viewBananaLearnt"
+        app:layout_constraintBottom_toTopOf="@id/viewStrawberryLearnt"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/lemon" />
+
+            <TextView
+                android:id="@+id/txtLemon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Lemon"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewPineappleLearnt"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/todo_background_card"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/viewStrawberryLearnt"
+        app:layout_constraintTop_toBottomOf="@id/viewOrangeLearnt"
+        app:layout_constraintBottom_toBottomOf = "parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/pineapple"/>
+
+            <TextView
+                android:id="@+id/txtPineapple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Pineapple"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewStrawberryLearnt"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/todo_background_card"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toEndOf="@id/viewPineappleLearnt"
+        app:layout_constraintTop_toBottomOf="@id/viewLemonLearnt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf = "parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/strawberry"/>
+
+            <TextView
+                android:id="@+id/txtStrawberry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Strawberry"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

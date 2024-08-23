@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_app"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="16dp"
+    tools:context=".ActivityLearntColors">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        app:cardBackgroundColor="@color/todo_background_card"
+        app:cardCornerRadius="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Colores"
+                android:textAllCaps="true"
+                android:textColor="@color/title_text"
+                android:textSize="50sp"
+                android:textStyle="normal"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Colors"
+                android:textAllCaps="true"
+                android:textColor="@color/title_text"
+                android:textSize="50sp"
+                android:textStyle="normal"
+                android:gravity="center"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewWhiteLearnt"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/todo_background_card"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/viewYellowLearnt"
+        app:layout_constraintTop_toBottomOf="@id/viewText2"
+        app:layout_constraintBottom_toTopOf="@id/viewGreenLearnt"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/color_android"
+                app:tint="@color/white"/>
+
+            <TextView
+                android:id="@+id/txtWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/White"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewYellowLearnt"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/todo_background_card"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toEndOf="@id/viewWhiteLearnt"
+        app:layout_constraintTop_toBottomOf="@id/viewText2"
+        app:layout_constraintBottom_toTopOf="@id/viewPinkLearnt"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/color_android"
+                app:tint="@color/yellow"/>
+
+            <TextView
+                android:id="@+id/txtYellow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Yellow"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewGreenLearnt"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/todo_background_card"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewWhiteLearnt"
+        app:layout_constraintEnd_toStartOf="@id/viewPinkLearnt"
+        app:layout_constraintBottom_toTopOf="@id/viewRedLearnt"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/color_android"
+                app:tint="@color/green"/>
+
+            <TextView
+                android:id="@+id/txtGreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Green"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewPinkLearnt"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/todo_background_card"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toEndOf="@id/viewGreenLearnt"
+        app:layout_constraintTop_toBottomOf="@id/viewYellowLearnt"
+        app:layout_constraintBottom_toTopOf="@id/viewBrownLearnt"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/color_android"
+                app:tint="@color/pink"/>
+
+            <TextView
+                android:id="@+id/txtPink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Pink"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewRedLearnt"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/todo_background_card"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/viewBrownLearnt"
+        app:layout_constraintTop_toBottomOf="@id/viewGreenLearnt"
+        app:layout_constraintBottom_toBottomOf = "parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/color_android"
+                app:tint="@color/red"/>
+
+            <TextView
+                android:id="@+id/txtRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Red"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewBrownLearnt"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/todo_background_card"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toEndOf="@id/viewRedLearnt"
+        app:layout_constraintTop_toBottomOf="@id/viewPinkLearnt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf = "parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/color_android"
+                app:tint="@color/brown"/>
+
+            <TextView
+                android:id="@+id/txtBrown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Brown"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

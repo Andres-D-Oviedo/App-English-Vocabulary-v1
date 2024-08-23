@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_app"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="16dp"
+    tools:context=".ActivityPlayFruitBanana">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        app:cardBackgroundColor="@color/todo_background_card"
+        app:cardCornerRadius="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Qué animal es?"
+                android:textAllCaps="true"
+                android:textColor="@color/title_text"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿what´s animal?"
+                android:textAllCaps="true"
+                android:textColor="@color/title_text"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/todo_background_card"
+        app:cardCornerRadius="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewText2"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/bananas"
+                android:layout_margin="@dimen/cardview_default_radius"
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnPlayOptBanana"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16sp"
+        android:background="@color/button_1"
+        android:text="@string/Banano"
+        android:textColor="@color/title_text"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/viewCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnPlayOptLemon"
+        />
+
+    <Button
+        android:id="@+id/btnPlayOptLemon"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/button_1"
+        android:text="@string/Limón"
+        android:textColor="@color/title_text"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/viewCard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnPlayOptBanana"
+
+        />
+
+    <Button
+        android:id="@+id/btnPlayOptApple"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:background="@color/button_1"
+        android:text="@string/Manzana"
+        android:layout_marginTop="16sp"
+        android:textColor="@color/title_text"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/btnPlayOptBanana"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnPlayOptOrange"/>
+
+    <Button
+        android:id="@+id/btnPlayOptOrange"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16sp"
+        android:layout_marginStart="16sp"
+        android:background="@color/button_1"
+        android:text="@string/Naranja"
+        android:textColor="@color/title_text"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/btnPlayOptLemon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnPlayOptApple"
+         />
+
+    <Button
+        android:id="@+id/btnPlayOptPineapple"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16sp"
+        android:layout_marginEnd="16sp"
+        android:background="@color/button_1"
+        android:text="@string/Piña"
+        android:textColor="@color/title_text"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnPlayOptApple"
+        app:layout_constraintEnd_toStartOf="@id/btnPlayOptStrawberry"
+        />
+
+    <Button
+        android:id="@+id/btnPlayOptStrawberry"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16sp"
+        android:background="@color/button_1"
+        android:text="@string/Fresa"
+        android:textColor="@color/title_text"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/btnPlayOptOrange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnPlayOptPineapple"
+
+         />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewScore"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/todo_background_card"
+        app:cardCornerRadius="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnPlayOptStrawberry">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/like"
+                android:layout_margin="@dimen/cardview_default_radius"
+                />
+            <TextView
+                android:id="@+id/tvScoreGood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="38sp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/6    "
+                android:textColor="@color/white"
+                android:textSize="38sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnPlayNext"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:background="@color/button_1"
+                android:text="@string/Siguiente"
+                android:textColor="@color/title_text"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

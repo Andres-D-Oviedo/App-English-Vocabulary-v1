@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="background_app">#0D47A1</color>
+    <color name="background_component">#00BCD4</color>
+    <color name="background_component_selected">#03A9F4</color>
+
+    <color name="title_text">#96A098</color>
+    <color name="todo_background_card">#0277BD</color>
+    <color name="button_1">#FF6200EE</color>
+    <color name="button_2">#FF8F00</color>
+    <color name="button_3">#AD1457</color>
+
+    <color name="green">#4A9E0F</color>
+    <color name="pink">#D010F1</color>
+    <color name="yellow">#F1980A</color>
+    <color name="brown">#775429</color>
+    <color name="red">#DA0F0F</color>
+
+    <color name="incorrecto">#D60B0B</color>
+    <color name="correcto">#78E809</color>
+
+</resources>

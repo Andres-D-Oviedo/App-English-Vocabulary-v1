@@ -1,0 +1,97 @@
+val cardDog = findViewById<CardView>(R.id.viewDogLearnt)
+        cardDog.setOnClickListener { Sound_Dog() }
+
+        val cardCat = findViewById<CardView>(R.id.viewCatLearnt)
+        cardCat.setOnClickListener { Sound_Cat() }
+
+        val cardHen = findViewById<CardView>(R.id.viewHenLearnt)
+        cardHen.setOnClickListener { Sound_Hen() }
+
+        val cardBee = findViewById<CardView>(R.id.viewBeeLearnt)
+        cardBee.setOnClickListener { Sound_Bee() }
+
+        val cardPig = findViewById<CardView>(R.id.viewPigLearnt)
+        cardPig.setOnClickListener { Sound_Pig() }
+
+        val cardCow = findViewById<CardView>(R.id.viewCowLearnt)
+        cardCow.setOnClickListener { Sound_Cow() }
+
+    private fun changeBooleanCardview() {
+        isCatSelected = !isCatSelected
+        isCowSelected = !isCowSelected
+        isPigSelected = !isPigSelected
+        isDogSelected = !isDogSelected
+        isBeeSelected = !isBeeSelected
+        isHenSelected = !isHenSelected
+    }
+
+
+        val cardPink = findViewById<CardView>(R.id.viewPinkLearnt)
+        cardPink.setOnClickListener { Sound_Pink() }
+
+        val cardWhite = findViewById<CardView>(R.id.viewWhiteLearnt)
+        cardWhite.setOnClickListener { Sound_White() }
+
+        val cardGreen = findViewById<CardView>(R.id.viewGreenLearnt)
+        cardGreen.setOnClickListener { Sound_Green() }
+
+        val cardYellow = findViewById<CardView>(R.id.viewYellowLearnt)
+        cardYellow.setOnClickListener { Sound_Yellow() }
+
+        val cardBrown = findViewById<CardView>(R.id.viewBrownLearnt)
+        cardBrown.setOnClickListener { Sound_Brown() }
+
+        val cardRed = findViewById<CardView>(R.id.viewRedLearnt)
+        cardRed.setOnClickListener { Sound_Red() }
+
+
+   viewWhiteLearnt = findViewById(R.id.viewWhiteLearnt)
+        viewYellowLearnt = findViewById(R.id.viewYellowLearnt)
+        viewGreenLearnt = findViewById(R.id.viewGreenLearnt)
+        viewPinkLearnt = findViewById(R.id.viewPinkLearnt)
+        viewRedLearnt = findViewById(R.id.viewRedLearnt)
+        viewBrownLearnt = findViewById(R.id.viewBrownLearnt)
+
+    private var isWhiteSelected: Boolean = false
+    private var isYellowSelected: Boolean = false
+    private var isGreenSelected: Boolean = false
+    private var isPinkSelected: Boolean = false
+    private var isRedSelected: Boolean = false
+    private var isBrownSelected: Boolean = false
+
+
+ 	val cardApple = findViewById<CardView>(R.id.viewAppleLearnt)
+        cardApple.setOnClickListener { Sound_Apple() }
+
+        val cardBanana = findViewById<CardView>(R.id.viewBananaLearnt)
+        cardBanana.setOnClickListener { Sound_Banana() }
+
+        val cardOrange = findViewById<CardView>(R.id.viewOrangeLearnt)
+        cardOrange.setOnClickListener { Sound_Orange() }
+
+        val cardLemon = findViewById<CardView>(R.id.viewLemonLearnt)
+        cardLemon.setOnClickListener { Sound_Lemon() }
+
+        val cardPineapple = findViewById<CardView>(R.id.viewPineappleLearnt)
+        cardPineapple.setOnClickListener { Sound_Pineapple() }
+
+        val cardStrawberry = findViewById<CardView>(R.id.viewStrawberryLearnt)
+        cardStrawberry.setOnClickListener { Sound_Strawberry() }
+
+
+
+        viewAppleLearnt = findViewById(R.id.viewAppleLearnt)
+        viewBananaLearnt = findViewById(R.id.viewBananaLearnt)
+        viewOrangeLearnt = findViewById(R.id.viewOrangeLearnt)
+        viewLemonLearnt = findViewById(R.id.viewLemonLearnt)
+        viewPineappleLearnt = findViewById(R.id.viewPineappleLearnt)
+        viewStrawberryLearnt = findViewById(R.id.viewStrawberryLearnt)
+
+
+
+   private var isOptBlueSelected: Boolean = false
+    private var isOptYellowSelected: Boolean = false
+    private var isOptWhiteSelected: Boolean = false
+    private var isOptPinkSelected: Boolean = false
+
+

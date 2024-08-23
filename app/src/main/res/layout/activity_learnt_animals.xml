@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/background_app"
+android:paddingHorizontal="16dp"
+android:paddingVertical="16dp"
+tools:context=".ActivityLearntAnimals">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        app:cardBackgroundColor="@color/todo_background_card"
+        app:cardCornerRadius="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Animales"
+                android:textAllCaps="true"
+                android:textColor="@color/title_text"
+                android:textSize="50sp"
+                android:textStyle="normal"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Animals"
+                android:textAllCaps="true"
+                android:textColor="@color/title_text"
+                android:textSize="50sp"
+                android:textStyle="normal"
+                android:gravity="center"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewCatLearnt"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/todo_background_card"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/viewCowLearnt"
+        app:layout_constraintTop_toBottomOf="@id/viewText2"
+        app:layout_constraintBottom_toTopOf="@id/viewPigLearnt"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/cat"/>
+
+            <TextView
+                android:id="@+id/txtCat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Cat"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewCowLearnt"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/todo_background_card"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toEndOf="@id/viewCatLearnt"
+        app:layout_constraintTop_toBottomOf="@id/viewText2"
+        app:layout_constraintBottom_toTopOf="@id/viewDogLearnt"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/cow"/>
+
+            <TextView
+                android:id="@+id/txtCow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Cow"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewPigLearnt"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/todo_background_card"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewCatLearnt"
+        app:layout_constraintEnd_toStartOf="@id/viewDogLearnt"
+        app:layout_constraintBottom_toTopOf="@id/viewBeeLearnt"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/pig"/>
+
+            <TextView
+                android:id="@+id/txtPig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Pig"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewDogLearnt"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/todo_background_card"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toEndOf="@id/viewPigLearnt"
+        app:layout_constraintTop_toBottomOf="@id/viewCowLearnt"
+        app:layout_constraintBottom_toTopOf="@id/viewHenLearnt"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/dog" />
+
+            <TextView
+                android:id="@+id/txtDog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Dog"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewBeeLearnt"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/todo_background_card"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/viewHenLearnt"
+        app:layout_constraintTop_toBottomOf="@id/viewPigLearnt"
+        app:layout_constraintBottom_toBottomOf = "parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/bee"/>
+
+            <TextView
+                android:id="@+id/txtBee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Bee"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewHenLearnt"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/todo_background_card"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toEndOf="@id/viewBeeLearnt"
+        app:layout_constraintTop_toBottomOf="@id/viewDogLearnt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf = "parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/hen"/>
+
+            <TextView
+                android:id="@+id/txtHen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Hen"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
